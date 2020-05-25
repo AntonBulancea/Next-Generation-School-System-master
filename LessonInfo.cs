@@ -518,6 +518,11 @@ namespace Next_Generation_School_System_by_Anton {
             }
             MessageBox.Show("File uploaded succesfully ", "IO party");
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e) {
+
+        }
+
         void MouseClickOnHt(object sender, MouseEventArgs e) {
             Label lbl = (Label)sender;
 
