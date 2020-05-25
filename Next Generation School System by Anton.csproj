@@ -34,7 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,17 +48,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chats.cs">
+    <Compile Include="AboutBox1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Chats.Designer.cs">
-      <DependentUpon>Chats.cs</DependentUpon>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Achievements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Achievements.Designer.cs">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Files.cs" />
     <Compile Include="LessonInfo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LessonInfo.Designer.cs">
       <DependentUpon>LessonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainSettings.Designer.cs">
+      <DependentUpon>MainSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
@@ -64,22 +85,46 @@
     <Compile Include="MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registrating.cs">
+    <Compile Include="News.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registrating.Designer.cs">
-      <DependentUpon>Registrating.cs</DependentUpon>
+    <Compile Include="News.Designer.cs">
+      <DependentUpon>News.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Chats.resx">
-      <DependentUpon>Chats.cs</DependentUpon>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrateNewAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrateNewAcc.Designer.cs">
+      <DependentUpon>RegistrateNewAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Social Network.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Social Network.Designer.cs">
+      <DependentUpon>Social Network.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Achievements.resx">
+      <DependentUpon>Achievements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LessonInfo.resx">
       <DependentUpon>LessonInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainSettings.resx">
+      <DependentUpon>MainSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="News.resx">
+      <DependentUpon>News.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -89,9 +134,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Registrating.resx">
-      <DependentUpon>Registrating.cs</DependentUpon>
+    <EmbeddedResource Include="RegistrateNewAcc.resx">
+      <DependentUpon>RegistrateNewAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Social Network.resx">
+      <DependentUpon>Social Network.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -107,7 +156,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="allGarbageAntonRedo.txt" />
+    <None Include="Resources\1589017293074.JPEG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achivments png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Achievements - 2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
